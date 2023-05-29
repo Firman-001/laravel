@@ -41,3 +41,5 @@ Route::get("/coba/request", [CobaController::class, "request"]);
 
 Route::get("/coba/request", [CobaController::class, "request"]);
 Route::post("/coba/nested-request", [CobaController::class, "nestedRequest"]);
+Route::get("/response/index", [App\Http\Controllers\BazmaController::class, 'responseFunction']);
+Route::get("/response/header", [App\Http\Controllers\BazmaController::class, 'responseHeader']);
